@@ -20,7 +20,12 @@ export class FormComponent implements OnInit {
     }
 
     onSubmit(form) {
-        console.log("Enviado!");
+        if(form.invalid) {
+            console.log("Fill all required fields");
+        } else {
+            console.log("Enviado!");
+        }
+
         console.log(form);
     }
 
