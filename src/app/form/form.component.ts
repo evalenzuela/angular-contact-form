@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+    subjects = [
+        { value:'', display:'None'},
+        { value:'comment', display:'Just writing a comment'},
+        { value:'question', display:'I have a question'},
+        { value:'support', display:'I have a support request'}
+    ];
 
-  ngOnInit() {
-  }
+    constructor() { }
+
+    ngOnInit() {
+    }
 
 }
