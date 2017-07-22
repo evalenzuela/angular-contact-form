@@ -19,4 +19,9 @@ export class FormComponent implements OnInit {
     ngOnInit() {
     }
 
+    onSubmit(form) {
+        console.log("Enviado!");
+        console.log(form);
+    }
+
 }
